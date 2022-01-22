@@ -1,0 +1,54 @@
+@import './_color.scss';
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.App {
+  text-align: center;
+}
+
+.AppHeader {
+  background-color: $BG1;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+.showPostBoxText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.showPostText {
+  text-align: left;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: $BG2;
+  width: 70%;
+  margin: 30px 0 0 0;
+  @media screen and (max-width:1024px) {
+    width: 80%;
+  }
+  @media screen and (max-width:768px) {
+    width: 90%;
+  }
+  @media screen and (max-width:320px) {
+    font-size: 1.3rem;
+  }
+}

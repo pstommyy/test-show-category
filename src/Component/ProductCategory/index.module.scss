@@ -1,0 +1,86 @@
+@import '../../_color.scss';
+.showPostBox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 70%;
+  gap: 30px;
+  padding: 30px 0px ;
+  @media screen and (max-width:1024px) {
+    width: 80%;
+  }
+  @media screen and (max-width:768px) {
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+    gap: 20px;
+  }
+  @media screen and (max-width:375px) {
+    grid-template-columns: 1fr;
+    gap: 10px;    
+  }
+}
+.imgBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img {
+  height: 100px;
+  @media screen and (max-width:1024px) {
+    height: 80px;
+  }
+  @media screen and (max-width:768px) {
+    height: 150px;
+  }
+  @media screen and (max-width:425px) {
+    height: 80px;
+  }
+  @media screen and (max-width:375px) {
+    height: 150px; 
+  }
+  @media screen and (max-width:320px) {
+    height: 100px; 
+  }
+}
+
+.profileCard{
+  border-radius: 10px;
+  box-shadow: 0px 3px 5px rgba(176, 190, 197, 0.32), 0px 8px 24px rgba(176, 190, 197, 0.32);
+  background-color: $white;
+}
+
+.detailProfile{
+  display: flex;
+  flex-direction: column;
+}
+
+.textName{
+  text-align: left;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: $BG2;
+}
+
+.textGrey{
+  text-align: left;
+  margin: 2px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.textContent{
+  @extend .textGrey;
+}
+
+.item{
+  padding: 50px 20px 30px 20px;
+  @media screen and (max-width:1024px) {
+    padding: 30px 20px 20px 20px;
+  }
+}
+
+
