@@ -25,8 +25,7 @@ const App: React.FC = (): JSX.Element => {
         <div className={styles.showPostBoxText}><p className={styles.showPostText}>{data.headText}</p></div>
           <ProductCategory />
       </div>))}
-      
-    </div>
+       </div>
   ); 
 }
 
